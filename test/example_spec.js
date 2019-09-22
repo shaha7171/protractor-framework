@@ -28,7 +28,7 @@ describe('angularjs homepage', function() {
       var addButton = element(by.css('[value="add"]'));
 
       addTodo.sendKeys('write a protractor test');
-      addButton.click();
+      addButton.click1();
 
       expect(todoList.count()).toEqual(3);
       expect(todoList.get(2).getText()).toEqual('write a protractor test');
